@@ -1,20 +1,27 @@
 {
-  "name": "10-Team-Profile-Builder",
-  "version": "1.0.0",
-  "description": "This Node.js application allows the user to construct a team profile, complete with a manager, engineers and interns.",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MichaelHermes/Team-Profile-Builder.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MichaelHermes/Team-Profile-Builder/issues"
-  },
-  "homepage": "https://github.com/MichaelHermes/Team-Profile-Builder#readme"
+	"name": "10-team-profile-builder",
+	"version": "1.0.0",
+	"description": "This Node.js application allows the user to construct a team profile, complete with a manager, engineers and interns.",
+	"main": "app.js",
+	"scripts": {
+		"test": "jest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MichaelHermes/Team-Profile-Builder.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/MichaelHermes/Team-Profile-Builder/issues"
+	},
+	"homepage": "https://github.com/MichaelHermes/Team-Profile-Builder#readme",
+	"devDependencies": {
+		"@types/jest": "^27.0.1",
+		"jest": "^27.0.6"
+	},
+	"dependencies": {
+		"inquirer": "^8.1.2"
+	}
 }
