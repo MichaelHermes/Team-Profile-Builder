@@ -3,6 +3,11 @@ const Engineer = require("./lib/engineer");
 const Intern = require("./lib/intern");
 const Manager = require("./lib/manager");
 const Team = require("./lib/team");
+const htmlTemplate = require("./src/htmlTemplate");
+const fs = require("fs");
+
+// Location of the output teamProfile.html file
+const outputFile = "./dist/teamProfile.html";
 
 const teamProfile = new Team();
 
@@ -25,6 +30,16 @@ const promptMainMenu = () => {
 				break;
 			case 3:
 				console.log(teamProfile);
+
+				fs.writeFile(
+					outputFile,
+					htmlTemplate.generateHTML(teamProfile),
+					err => {
+						if (err) throw err;
+						console.log("File written successfully!");
+					}
+				);
+
 				break;
 		}
 	});
