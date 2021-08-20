@@ -9,7 +9,7 @@ const fs = require("fs");
 // Location of the output teamProfile.html file
 const outputFile = "./dist/teamProfile.html";
 
-const teamProfile = new Team();
+let teamProfile;
 
 // Prompts the user with main menu options and handles their choice.
 const promptMainMenu = () => {
@@ -29,14 +29,12 @@ const promptMainMenu = () => {
 				promptForIntern();
 				break;
 			case 3:
-				console.log(teamProfile);
-
 				fs.writeFile(
 					outputFile,
 					htmlTemplate.generateHTML(teamProfile),
 					err => {
 						if (err) throw err;
-						console.log("File written successfully!");
+						console.log("HTML file written successfully!");
 					}
 				);
 
@@ -49,6 +47,10 @@ const promptMainMenu = () => {
 const promptForManager = () => {
 	inquirer
 		.prompt([
+			{
+				message: "What is the name of your team?",
+				name: "TeamName",
+			},
 			{
 				message: "What is the team Manager's name?",
 				name: "Name",
@@ -68,6 +70,7 @@ const promptForManager = () => {
 		])
 		.then(answers => {
 			try {
+				teamProfile = new Team(answers.TeamName);
 				teamProfile.addManager(
 					new Manager(
 						answers.Name,
