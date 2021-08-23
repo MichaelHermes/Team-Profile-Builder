@@ -19,11 +19,13 @@ The [Inquirer](https://www.npmjs.com/package/inquirer) package is required in or
 
 ## Usage
 
+`node app`
+
 The user is asked for team details, such as Team Name, Manager, Engineers and Interns, via command-line prompts and upon answering those prompts, an HTML file representing the team profile is generated.
 
 ![HTML webpage titled “The Dream Team” features boxes listing employee names, titles, and other key info.](./src/Team-Profile-Builder.jpg)
 
-A complete video walkthrough of this console application can be found [here]().
+A complete video walkthrough of this console application can be found [here](https://github.com/MichaelHermes/Team-Profile-Builder/blob/main/src/Demonstration.mp4).
 
 ## License
 
