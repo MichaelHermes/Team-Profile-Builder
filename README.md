@@ -2,7 +2,11 @@
 
 ## Description
 
-This Node.js application allows the user to construct a team profile, complete with a manager, engineers and interns.
+This Node.js application allows the user to construct a team profile, complete with a manager, engineers and interns. The teamProfile.html file generated as output from this application can be found [here](https://github.com/MichaelHermes/Team-Profile-Builder/blob/main/dist/teamProfile.html).
+
+![HTML webpage titled “The Dream Team” features boxes listing employee names, titles, and other key info.](./src/Team-Profile-Builder.jpg)
+
+A complete video walkthrough of this console application can be found [here](https://github.com/MichaelHermes/Team-Profile-Builder/blob/main/src/Demonstration.mp4).
 
 ## Table of Contents
 
@@ -22,10 +26,6 @@ The [Inquirer](https://www.npmjs.com/package/inquirer) package is required in or
 `node app`
 
 The user is asked for team details, such as Team Name, Manager, Engineers and Interns, via command-line prompts and upon answering those prompts, an HTML file representing the team profile is generated.
-
-![HTML webpage titled “The Dream Team” features boxes listing employee names, titles, and other key info.](./src/Team-Profile-Builder.jpg)
-
-A complete video walkthrough of this console application can be found [here](https://github.com/MichaelHermes/Team-Profile-Builder/blob/main/src/Demonstration.mp4).
 
 ## License
 
